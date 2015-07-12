@@ -135,7 +135,9 @@ class Message(object):
             left_chat_participant = User.de_json(data['left_chat_participant'])
         else:
             left_chat_participant = None
-
+        if 'chat' not in locals()
+            chat = None
+            
         return Message(message_id=data.get('message_id', None),
                        from_user=from_user,
                        date=data.get('date', None),
